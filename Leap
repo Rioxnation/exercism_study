@@ -1,0 +1,13 @@
+def leap_year(year):
+    waka_waka = bool(year % 4 == 0)
+    wiki_wiki = bool(year % 400 == 0)
+    wenk = bool(year % 100 == 0)
+
+    if wenk and wiki_wiki:
+        return True
+    elif wenk and not wiki_wiki:
+        return False
+    elif waka_waka:
+        return True
+    else:
+        return False
